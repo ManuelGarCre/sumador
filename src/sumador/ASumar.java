@@ -14,9 +14,11 @@ public class ASumar {
 		int tamanyo = numero.length();
 		String resultado = "";
 		
+		//Si numero es de una soa cifra.
 		if(tamanyo == 1) {
 			resultado = numero + " = " + numero;
 		}
+		//Si numero es negativo.
 		else if(numero.charAt(0) == '-') {
 			resultado = "Negativo, siempre negativo";
 		}
