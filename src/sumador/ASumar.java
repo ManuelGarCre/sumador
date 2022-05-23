@@ -11,7 +11,7 @@ public class ASumar {
 	* @return cadena del sumatorio y resultado.
 	*/ 
 	public String sumativo(String numero) {
-		int tamanyo = numero.length();
+		final int tamanyo = numero.length();
 		String resultado = "";
 		
 		//Si numero es de una soa cifra.
@@ -33,6 +33,11 @@ public class ASumar {
 		return resultado;
 	}
 	
+	/** 
+	* sumaDigitos suma los digitos de una cadena. 
+	* @param numero cadena numerica a sumar. 
+	* @return resultado de la suma de los digitos de la cadena.
+	*/ 
 	public int sumaDigitos(String numero) {
 		int total = 0;
 		
