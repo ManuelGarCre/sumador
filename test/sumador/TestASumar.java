@@ -22,10 +22,17 @@ class TestASumar {
 	}
 	
 	@Test
-	// Probamos la introducción de una sola cifra
+	// Probamos la introducción de una sola cifra positiva
     public void testUnaCifra() {
         String sumatorio = sumar.sumativo("5");
         assertEquals("5 = 5",sumatorio);
     }
+	
+	@Test
+	//Probamos con numeros negativos
+	public void testCifraNeg() {
+		String sumatorio = sumar.sumativo("-100");
+        assertEquals("Negativo, siempre negativo",sumatorio);
+	}
 
 }

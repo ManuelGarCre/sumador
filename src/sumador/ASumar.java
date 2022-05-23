@@ -17,6 +17,9 @@ public class ASumar {
 		if(tamanyo == 1) {
 			resultado = numero + " = " + numero;
 		}
+		else if(numero.charAt(0) == '-') {
+			resultado = "Negativo, siempre negativo";
+		}
 		return resultado;
 	}
 
