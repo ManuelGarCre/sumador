@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"sumador","c":"ASumar","l":"ASumar()","u":"%3Cinit%3E()"},{"p":"sumador","c":"ASumar","l":"sumativo(String)","u":"sumativo(java.lang.String)"}];updateSearchResults();
