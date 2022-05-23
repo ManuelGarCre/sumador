@@ -7,7 +7,7 @@ public class ASumar {
 		String salida = "";
 		
 		if(tamanyo == 1) {
-			salida = "numero" + " = " + "numero";
+			salida = numero + " = " + numero;
 		}
 		return salida;
 	}
