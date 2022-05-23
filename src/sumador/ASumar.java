@@ -4,12 +4,12 @@ public class ASumar {
 
 	public String sumativo(String numero) {
 		int tamanyo = numero.length();
-		String salida = "";
+		String resultado = "";
 		
 		if(tamanyo == 1) {
-			salida = numero + " = " + numero;
+			resultado = numero + " = " + numero;
 		}
-		return salida;
+		return resultado;
 	}
 
 }

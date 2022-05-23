@@ -21,14 +21,6 @@ class TestASumar {
 		sumar = null;
 	}
 
-	@BeforeEach
-	void setUp() throws Exception {
-	}
-
-	@AfterEach
-	void tearDown() throws Exception {
-	}
-
 	@Test
     public void testUnaCifra() {
         String sumatorio = sumar.sumativo("5");
