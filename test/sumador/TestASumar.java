@@ -34,5 +34,11 @@ class TestASumar {
 		String sumatorio = sumar.sumativo("-100");
         assertEquals("Negativo, siempre negativo",sumatorio);
 	}
-
+	
+	@Test
+	//Probamos con numeros de más de una cifra
+	public void testVariasCifras() {
+		String sumatorio = sumar.sumativo("3433");
+        assertEquals("3 + 4 + 3 + 3 = 13",sumatorio);
+	}
 }

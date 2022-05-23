@@ -22,7 +22,24 @@ public class ASumar {
 		else if(numero.charAt(0) == '-') {
 			resultado = "Negativo, siempre negativo";
 		}
+		//Si el numero tiene mas de una cifra y no es negativo.
+		else {
+			for(int i = 0; i < (numero.length() - 1); i++) {
+				resultado += numero.charAt(i) + " + ";
+			}
+			
+			resultado += numero.charAt(tamanyo - 1) + " = " + sumaDigitos(numero);
+		}
 		return resultado;
 	}
-
+	
+	public int sumaDigitos(String numero) {
+		int total = 0;
+		
+		for(int i = 0; i < numero.length(); i++) {
+			total += Character.getNumericValue(numero.charAt(i));
+		}
+		
+		return total;
+	}
 }
