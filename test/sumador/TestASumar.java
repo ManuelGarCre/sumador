@@ -20,8 +20,9 @@ class TestASumar {
 	static void tearDownAfterClass() throws Exception {
 		sumar = null;
 	}
-
+	
 	@Test
+	// Probamos la introducción de una sola cifra
     public void testUnaCifra() {
         String sumatorio = sumar.sumativo("5");
         assertEquals("5 = 5",sumatorio);
