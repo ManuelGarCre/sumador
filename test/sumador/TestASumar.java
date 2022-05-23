@@ -9,13 +9,16 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class TestASumar {
-
+	static ASumar sumar;
+	
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
+		sumar = new ASumar();
 	}
 
 	@AfterAll
 	static void tearDownAfterClass() throws Exception {
+		sumar = null;
 	}
 
 	@BeforeEach
@@ -27,8 +30,9 @@ class TestASumar {
 	}
 
 	@Test
-	void test() {
-		fail("No implementado aun");
-	}
+    public void testUnaCifra() {
+        String sumatorio = sumar.sumativo("5");
+        assertEquals("5 = 5",sumatorio);
+    }
 
 }
